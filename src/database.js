@@ -1,8 +1,6 @@
 const mongoose = require('mongoose');
 
-const URI = 'mongodb://localhost/mern-tasks';
-// CONECTAR CON BASE DE DATOS
-//mongoose.connect('mongo "mongodb+srv://cluster0.cd7ks.mongodb.net/myFirstDatabase" --username max');
+const URI = 'mongodb+srv://max:<max>@cluster0.f7ino.mongodb.net/myFirstDatabase?retryWrites=true&w=majority';
 mongoose.connect(URI)
     .then(db => console.log('DB is connected'))
     .catch(err => console.error(err));
